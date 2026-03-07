@@ -48,7 +48,7 @@
   .input {
     @apply w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3
            text-white placeholder-white/30 text-base
-           focus:border-[#6c63ff]/60 focus:bg-white/8 transition-all duration-150;
+           focus:border-[#6c63ff]/60 focus:bg-white/10 transition-all duration-150;
   }
 
   .section-label {
@@ -66,7 +66,10 @@
 }
 
 /* Custom scrollbar */
-::-webkit-scrollbar { width: 0; height: 0; }
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
 
 /* Safe area */
 .safe-bottom {
@@ -79,13 +82,23 @@
 }
 
 @keyframes slideUp {
-  from { transform: translateY(12px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
 }
 
 .skeleton {
