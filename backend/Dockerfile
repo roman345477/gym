@@ -17,7 +17,7 @@ RUN npx prisma generate
 COPY . .
 RUN npm run build
 
-EXPOSE 3000
+EXPOSE 3001
 
 # Push schema to DB then start server
 CMD ["sh", "-c", "npx prisma db push --accept-data-loss && node dist/server.js"]
