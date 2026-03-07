@@ -15,7 +15,7 @@ COPY . .
 RUN npm run build
 
 # Expose port
-EXPOSE 3000
+EXPOSE 3001
 
 # Run migrations then start — migrations need DATABASE_URL at runtime, not build time
 CMD ["sh", "-c", "npx prisma db push --accept-data-loss && node dist/server.js"]
