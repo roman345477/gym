@@ -7,7 +7,7 @@
     "dev": "ts-node-dev --respawn src/server.ts",
     "build": "tsc && npx prisma generate",
     "start": "node dist/server.js",
-    "prisma:migrate": "npx prisma migrate deploy",
+"prisma:migrate": "npx prisma migrate deploy",
     "prisma:generate": "npx prisma generate",
     "postinstall": "npx prisma generate"
   },
